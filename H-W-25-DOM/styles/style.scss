@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #130639;
+}
+
+
+header {
+    height: 88px;
+    width: 78%;
+    border-bottom: 1px solid #2D317A;
+    position: fixed;
+    top: 0;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    z-index: 9999;
+
+    .search {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        label {
+            display: flex;
+            align-items: center;
+            height: 32px;
+            background-color: #161245;
+            border-radius: 18px;
+            padding: 10px;
+
+            input {
+                all: unset;
+                color: white;
+                padding-left: 15px;
+            }
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .gmail {
+            width: 28px;
+            height: 28px;
+            background-image: url(../img/Group-gmail.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+
+        }
+
+        .coll {
+            width: 28px;
+            height: 28px;
+            background-image: url(../img/Vector-coll.png);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+
+        }
+    }
+}
+
+
+main {
+    width: 100%;
+    height: 97vh;
+    background: radial-gradient(63.88% 129.61% at 25.55% 31.91%, #20135C 0%, #140739 92.82%);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: red;
+    z-index: 0;
+
+    aside {
+        width: 18%;
+        height: 100%;
+        background: linear-gradient(0.32deg, rgba(28, 35, 64, 0) -5.79%, #1C0F54 114.59%);
+        filter: drop-shadow(0px -5px 25px rgba(0, 3, 32, 0.5));
+
+        padding: 24px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logo {
+                width: 99px;
+                height: 29px;
+                background-image: url(../img/valuet-logo.png);
+                background-position: center;
+                border-bottom: 2px solid #1288E8;
+                margin-bottom: 40px;
+            }
+
+            .text {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 15px 16px;
+                height: 46px;
+                justify-content: start;
+                width: 100%;
+
+                img {
+                    filter: invert(50%);
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    color: #616A8B;
+                }
+            }
+
+            .active {
+                background-color: #32395E;
+                border-bottom: 2px solid #1288E8;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+
+                img {
+                    filter: invert(0%);
+                }
+
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .bottom {
+            border-top: 2px solid #1288E8;
+            padding-top: 24px;
+
+            .text_user {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 15px 16px;
+                height: 46px;
+                justify-content: start;
+                width: 100%;
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 19px;
+                    color: #616A8B;
+                }
+            }
+        }
+    }
+
+
+    .swap_box {
+        display: flex;
+        position: absolute;
+        right: -100%;
+        bottom: 32px;
+        width: 78%;
+        height: 80%;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+        transition: 0.3s ease;
+    }
+
+
+
+    .Overview {
+        background-color: aqua;
+    }
+
+    .Wallets {
+        background-color: royalblue;
+    }
+
+    .Transictions {
+        background-color: cornflowerblue;
+    }
+
+    .Exchange {
+        background-color: blanchedalmond;
+    }
+
+    .Market {
+        background-color: darkolivegreen;
+    }
+
+
+}
